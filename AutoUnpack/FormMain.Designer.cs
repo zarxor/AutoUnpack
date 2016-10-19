@@ -40,12 +40,12 @@
             this.btnScan = new System.Windows.Forms.Button();
             this.pbScan = new System.Windows.Forms.ProgressBar();
             this.gbFolders = new System.Windows.Forms.GroupBox();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.tsFolders = new System.Windows.Forms.ToolStrip();
             this.tsAddFolder = new System.Windows.Forms.ToolStripButton();
             this.tsRemoveFolder = new System.Windows.Forms.ToolStripButton();
             this.lstFolders = new System.Windows.Forms.ListBox();
             this.gbIgnore = new System.Windows.Forms.GroupBox();
-            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
+            this.tsIgnore = new System.Windows.Forms.ToolStrip();
             this.tsAddIgnore = new System.Windows.Forms.ToolStripButton();
             this.tsRemoveIgnore = new System.Windows.Forms.ToolStripButton();
             this.lbIgnore = new System.Windows.Forms.ListBox();
@@ -53,7 +53,7 @@
             this.ssMain = new System.Windows.Forms.StatusStrip();
             this.pbArchiveProgress = new System.Windows.Forms.ToolStripProgressBar();
             this.tssArchiveProgress = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsMain = new System.Windows.Forms.ToolStrip();
             this.btnSaveDefault = new System.Windows.Forms.ToolStripButton();
             this.btnLoadDefault = new System.Windows.Forms.ToolStripButton();
             this.chkUnpackDelete = new System.Windows.Forms.CheckBox();
@@ -67,11 +67,11 @@
             this.gbUnpack.SuspendLayout();
             this.gbScan.SuspendLayout();
             this.gbFolders.SuspendLayout();
-            this.toolStrip2.SuspendLayout();
+            this.tsFolders.SuspendLayout();
             this.gbIgnore.SuspendLayout();
-            this.toolStrip3.SuspendLayout();
+            this.tsIgnore.SuspendLayout();
             this.ssMain.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.tsMain.SuspendLayout();
             this.gbArchives.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,7 +195,7 @@
             // 
             // gbFolders
             // 
-            this.gbFolders.Controls.Add(this.toolStrip2);
+            this.gbFolders.Controls.Add(this.tsFolders);
             this.gbFolders.Controls.Add(this.lstFolders);
             this.gbFolders.Location = new System.Drawing.Point(12, 12);
             this.gbFolders.Name = "gbFolders";
@@ -204,16 +204,16 @@
             this.gbFolders.TabStop = false;
             this.gbFolders.Text = " Folders to scan";
             // 
-            // toolStrip2
+            // tsFolders
             // 
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsFolders.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsAddFolder,
             this.tsRemoveFolder});
-            this.toolStrip2.Location = new System.Drawing.Point(3, 16);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(167, 25);
-            this.toolStrip2.TabIndex = 1;
-            this.toolStrip2.Text = "toolStrip2";
+            this.tsFolders.Location = new System.Drawing.Point(3, 16);
+            this.tsFolders.Name = "tsFolders";
+            this.tsFolders.Size = new System.Drawing.Size(167, 25);
+            this.tsFolders.TabIndex = 1;
+            this.tsFolders.Text = "toolStrip2";
             // 
             // tsAddFolder
             // 
@@ -250,7 +250,7 @@
             // 
             // gbIgnore
             // 
-            this.gbIgnore.Controls.Add(this.toolStrip3);
+            this.gbIgnore.Controls.Add(this.tsIgnore);
             this.gbIgnore.Controls.Add(this.lbIgnore);
             this.gbIgnore.Location = new System.Drawing.Point(9, 194);
             this.gbIgnore.Name = "gbIgnore";
@@ -259,16 +259,16 @@
             this.gbIgnore.TabStop = false;
             this.gbIgnore.Text = "Ignore files that ends with";
             // 
-            // toolStrip3
+            // tsIgnore
             // 
-            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsIgnore.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsAddIgnore,
             this.tsRemoveIgnore});
-            this.toolStrip3.Location = new System.Drawing.Point(3, 16);
-            this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Size = new System.Drawing.Size(167, 25);
-            this.toolStrip3.TabIndex = 10;
-            this.toolStrip3.Text = "toolStrip3";
+            this.tsIgnore.Location = new System.Drawing.Point(3, 16);
+            this.tsIgnore.Name = "tsIgnore";
+            this.tsIgnore.Size = new System.Drawing.Size(167, 25);
+            this.tsIgnore.TabIndex = 10;
+            this.tsIgnore.Text = "toolStrip3";
             // 
             // tsAddIgnore
             // 
@@ -335,16 +335,16 @@
             this.tssArchiveProgress.Size = new System.Drawing.Size(46, 17);
             this.tssArchiveProgress.Text = "Idling...";
             // 
-            // toolStrip1
+            // tsMain
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnSaveDefault,
             this.btnLoadDefault});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(956, 25);
-            this.toolStrip1.TabIndex = 19;
-            this.toolStrip1.Text = "toolStrip1";
+            this.tsMain.Location = new System.Drawing.Point(0, 0);
+            this.tsMain.Name = "tsMain";
+            this.tsMain.Size = new System.Drawing.Size(956, 25);
+            this.tsMain.TabIndex = 19;
+            this.tsMain.Text = "toolStrip1";
             // 
             // btnSaveDefault
             // 
@@ -409,7 +409,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 542);
             this.Controls.Add(this.scMain);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.tsMain);
             this.Controls.Add(this.ssMain);
             this.Name = "FormMain";
             this.Text = "AutoUnpack";
@@ -425,16 +425,16 @@
             this.gbScan.PerformLayout();
             this.gbFolders.ResumeLayout(false);
             this.gbFolders.PerformLayout();
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
+            this.tsFolders.ResumeLayout(false);
+            this.tsFolders.PerformLayout();
             this.gbIgnore.ResumeLayout(false);
             this.gbIgnore.PerformLayout();
-            this.toolStrip3.ResumeLayout(false);
-            this.toolStrip3.PerformLayout();
+            this.tsIgnore.ResumeLayout(false);
+            this.tsIgnore.PerformLayout();
             this.ssMain.ResumeLayout(false);
             this.ssMain.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.tsMain.ResumeLayout(false);
+            this.tsMain.PerformLayout();
             this.gbArchives.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -461,11 +461,11 @@
         private System.Windows.Forms.StatusStrip ssMain;
         private System.Windows.Forms.ToolStripStatusLabel tssArchiveProgress;
         private System.Windows.Forms.ToolStripProgressBar pbArchiveProgress;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStrip tsMain;
+        private System.Windows.Forms.ToolStrip tsFolders;
         private System.Windows.Forms.ToolStripButton tsAddFolder;
         private System.Windows.Forms.ToolStripButton tsRemoveFolder;
-        private System.Windows.Forms.ToolStrip toolStrip3;
+        private System.Windows.Forms.ToolStrip tsIgnore;
         private System.Windows.Forms.ToolStripButton tsAddIgnore;
         private System.Windows.Forms.ToolStripButton tsRemoveIgnore;
         private System.Windows.Forms.ToolStripButton btnSaveDefault;
