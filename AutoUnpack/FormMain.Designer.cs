@@ -145,7 +145,7 @@
             this.btnUnpack.Name = "btnUnpack";
             this.btnUnpack.Size = new System.Drawing.Size(161, 40);
             this.btnUnpack.TabIndex = 13;
-            this.btnUnpack.Text = "Unpack files";
+            this.btnUnpack.Text = "Unpack archives";
             this.btnUnpack.UseVisualStyleBackColor = true;
             this.btnUnpack.Click += new System.EventHandler(this.btnUnpack_Click);
             // 
@@ -180,7 +180,7 @@
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(161, 45);
             this.btnScan.TabIndex = 2;
-            this.btnScan.Text = "Scan folders";
+            this.btnScan.Text = "Scan folders for sfv-files";
             this.btnScan.UseVisualStyleBackColor = true;
             this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
@@ -202,7 +202,7 @@
             this.gbFolders.Size = new System.Drawing.Size(173, 183);
             this.gbFolders.TabIndex = 18;
             this.gbFolders.TabStop = false;
-            this.gbFolders.Text = " Folders";
+            this.gbFolders.Text = " Folders to scan";
             // 
             // toolStrip2
             // 
@@ -257,7 +257,7 @@
             this.gbIgnore.Size = new System.Drawing.Size(173, 160);
             this.gbIgnore.TabIndex = 17;
             this.gbIgnore.TabStop = false;
-            this.gbIgnore.Text = "Ignore";
+            this.gbIgnore.Text = "Ignore files that ends with";
             // 
             // toolStrip3
             // 
